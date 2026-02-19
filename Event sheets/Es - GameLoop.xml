@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Es - GameLoop</name>
+    <events>
+        <variable constant="0" name="CompanyHP" sid="233530782632522" static="0" type="number">10</variable>
+        <variable constant="0" name="Comfort" sid="552994238596613" static="0" type="number">10</variable>
+        <variable constant="0" name="StructuralHP" sid="382025496618602" static="0" type="number">10</variable>
+        <variable constant="0" name="ETALeft" sid="192980226155750" static="0" type="number">10</variable>
+        <variable constant="0" name="Fuel" sid="900128065658180" static="0" type="number">10</variable>
+        <variable constant="0" name="Altitude" sid="992792510959624" static="0" type="number">10</variable>
+        <event-block sid="844489313986534">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="241839920292847" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="305772962179944" type="valueAltitude">
+                    <param id="0" name="Text">Altitude</param>
+                </action>
+                <action id="0" name="Set text" sid="649793125759090" type="valueFuel">
+                    <param id="0" name="Text">Fuel</param>
+                </action>
+                <action id="0" name="Set text" sid="714031099217142" type="valueHP">
+                    <param id="0" name="Text">StructuralHP</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="721325729897294">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="252644363847726" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AltitudeUp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="241011377139246" type="System">
+                    <param id="0" name="Variable">Altitude</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="520478823028913" type="System">
+                    <param id="0" name="Variable">Fuel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="996977065636754" type="System">
+                    <param id="0" name="Variable">StructuralHP</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="754588667811559">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="567736355557090" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">AltitudeDown</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="396333555292820" type="System">
+                    <param id="0" name="Variable">Altitude</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="136023407000342" type="System">
+                    <param id="0" name="Variable">StructuralHP</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674897891769862">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="410856692102859" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">FuelUp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="863945547518955" type="System">
+                    <param id="0" name="Variable">Altitude</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="631616105244879">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="969528591928989" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">FuelDown</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="418506107296800" type="System">
+                    <param id="0" name="Variable">Fuel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="529137536263591">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="905681207548881" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">HpUp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="663064716348287" type="System">
+                    <param id="0" name="Variable">Altitude</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-10" name="Add to" sid="851271438711643" type="System">
+                    <param id="0" name="Variable">StructuralHP</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="373527850272303">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="993260510264335" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">HPDown</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="658322420581082" type="System">
+                    <param id="0" name="Variable">Altitude</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="883936664099121" type="System">
+                    <param id="0" name="Variable">StructuralHP</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

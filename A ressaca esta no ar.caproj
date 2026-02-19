@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>A ressaca esta no ar</name>
+    <description>GameJam Prototype</description>
+    <version>0.0.1</version>
+    <author>mafiagafo</author>
+    <author-email></author-email>
+    <author-website></author-website>
+    <app-id>mafiagafo-a-ressaca-esta-no-ar</app-id>
+    <unique-id>395cry6nbrenm</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1920</width>
+        <height>1080</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="JamLogo" sid="972349335817072">
+            <plugin id="NinePatch" />
+            <behaviors>
+                <behavior-type name="Fade" sid="464210643015369">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\Mafiagafo\Desktop\Game Jam Carnaval\Assets\logo 1920x1080.png" />
+        </object-type>
+        <object-type name="TxtStartGame" sid="520425600351137">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="182722823502195">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="LabelGameLoop" sid="846675276740150">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelAltitude" sid="765889586383778">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="valueAltitude" sid="254783504362077">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="FuelText" sid="236159491244598">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="valueFuel" sid="804861456753772">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelHP" sid="201749077952157">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="valueHP" sid="317110881332480">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AltitudeUp" sid="974004421183841">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="360117329666980" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mafiagafo\Desktop\Game Jam Carnaval\Assets\ArrowUp.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FuelUp" sid="624315757466621">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="302718511623031" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mafiagafo\Desktop\Game Jam Carnaval\Assets\ArrowUp.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HpUp" sid="105510445823739">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="243945406026280" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mafiagafo\Desktop\Game Jam Carnaval\Assets\ArrowUp.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="AltitudeDown" sid="469332492153161">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="543893854714189" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mafiagafo\Desktop\Game Jam Carnaval\Assets\ArrowDown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FuelDown" sid="234561951935775">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="205510508544813" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mafiagafo\Desktop\Game Jam Carnaval\Assets\ArrowDown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="HPDown" sid="265997436803257">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="729719742340834" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Mafiagafo\Desktop\Game Jam Carnaval\Assets\ArrowDown.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>L - JamLogo.xml</layout>
+        <layout>L - MainMenu.xml</layout>
+        <layout>L - GameLoop.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ES - JamLogo.xml</event-sheet>
+        <event-sheet>ES - MainMenu.xml</event-sheet>
+        <event-sheet>Es - GameLoop.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="3" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

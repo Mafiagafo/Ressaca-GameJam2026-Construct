@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ES - JamLogo</name>
+    <events>
+        <event-block sid="600212381207835">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="270284449206919" type="System" />
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="1" name="Start fade" sid="742150408705645" type="JamLogo" />
+                <action id="-16" name="Wait" sid="656582847768417" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="197968905686177" type="System">
+                    <param id="0" name="Layout">L - MainMenu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
